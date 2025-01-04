@@ -1,0 +1,16 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "Build_with_ESP_Virtual_Environment",
+            "displayName": "Build with ESP Virtual Environment",
+            "environment": {
+                "PATH": "$penv{ESP_VENV}/bin:$penv{PATH}"
+            },
+            "cacheVariables": {
+                "Python_EXECUTABLE": "$penv{ESP_VENV}/bin/python",
+                "CMAKE_MAKE_PROGRAM": "/usr/bin/make"
+            }
+        }
+    ]
+}
